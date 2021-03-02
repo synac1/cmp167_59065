@@ -8,7 +8,7 @@ public class PracticeForLoop {
 		/*
 		 * double sum = 0.0;
 		 * 
-		 * for(int i = 1 ; i <= n ; i++ ) { //infinite loop sum += i; }
+		 * for(int i = 1 ; i <= n ; i++ ) {  sum += i; }
 		 * 
 		 * System.out.println("Sum is "+ sum); System.out.println("Average "+ (sum/n));
 		 * 
