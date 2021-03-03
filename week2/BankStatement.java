@@ -15,8 +15,16 @@ public class BankStatement {
 		double withdraw;
 		double deposit;
 		
+		System.out.println("Enter your username");
+		String username = sc.next();
+		System.out.println("Enter your password ");
+		String password = sc.next();
+		
+		System.out.println("Login successful");
+		System.out.println("Welcome, "+username);
+		
 		balance = 100.00;
-		System.out.println("Your balance is "+ balance);
+		System.out.printf("Your balance is %.2f%n", balance);
 		
 		System.out.println("Enter deposit");
 		deposit = sc.nextDouble(); // waits  for users input and store into the variable
