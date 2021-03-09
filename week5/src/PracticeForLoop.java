@@ -27,14 +27,17 @@ public class PracticeForLoop {
 			if(userInput.equals(pasword)) {
 				System.out.println("Welcome!");
 				break;
+				
 			}else {
 				System.out.println("Wrong password");
 			}
-			
 		}
+		
 		if(i == 5) {
 			System.out.println("Your account has been locked out");
 		}
+		
+		
 
 
 	}
