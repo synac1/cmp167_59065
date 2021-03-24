@@ -9,6 +9,35 @@
  	
  	4- A method that calculates the numerical value of a given string, and return the numerical value
  */
-public class Exercise {
+import java.util.Scanner;
+import java.util.Date;
+import java.util.Calendar;
 
+public class Exercise {
+	static Scanner input = new Scanner (System.in);
+	
+	public static int getAge () {
+		System.out.println("Enter age: ");
+		return input.nextInt();  //returns the int value that was grabbed from the user
+	}
+	//input method
+	public static String getName (String  message) {
+		System.out.println(message);
+		return input.next();
+	}
+	
+	public static int calculateBirthYear(int age) {
+		Date  date = new Date();
+		int currentYear = date.getYear();
+		return currentYear-age;
+	}
+	
+	public static int numericalValue (String word) {
+		int sum = 0;
+		for (int i = 0; i < word.length() ; i++ ) {
+			sum += word.charAt(i);
+		}
+		return sum;
+	}
+	
 }
