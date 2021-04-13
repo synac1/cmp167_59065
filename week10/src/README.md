@@ -29,7 +29,7 @@ public boolean equals(Object obj){
 	}
 	if(obj instanceof NameOfClass ){
 		NameOfClass other = (NameOfClass) obj;
-		if( this.attr1 == other.attr1 && this.attr2 == other.attr)
+		if( this.attr1 == other.attr1 && this.attr2 == other.attr2)
 			return true ;
 	}
 	return false;
