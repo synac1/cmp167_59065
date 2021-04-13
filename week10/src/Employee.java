@@ -60,7 +60,7 @@ public class Employee {
 			if ( getEmpID() == otherEmployee.getEmpID() 
 					&& getName().equals(otherEmployee.getName())
 					&& getRole().equals(otherEmployee.getRole())
-					&& (getSalary()-otherEmployee.getSalary())<.000001) {
+					&& Math.abs(getSalary()-otherEmployee.getSalary())<.000001) {
 				return true;
 			}
 		}
