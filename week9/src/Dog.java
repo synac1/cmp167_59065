@@ -28,13 +28,27 @@ public class Dog {
 			System.out.println("The name should be less than 4 characters");
 		}
 	}
+	public void setSpecies(String spec) {
+	    species = spec;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
 	//getter 
 	public String getName() {
 		return name;
 	}
+	public String getSpecies() {
+		return species;
+	}
+	public int getAge() {
+		return age;
+	}
+	
+	
 	@Override
 	public String toString() {
-		return "Dog : name : "+getName()+" , species : "+ this.species +" , age : "+this.age;
+		return "Dog : name : "+this.getName()+" , species : "+ getSpecies() +" , age : "+getAge();
 	}
 	//Modify the dog class, so it has a setter and getter for the species and the age
 	//Modify the toString method so it uses the getters instead of the instance variables

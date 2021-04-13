@@ -5,8 +5,7 @@ public class DogTest {
 		
 		Dog d2 = new Dog("Lila");
 		
-		d1.setName("Sebastian");
-		d1.setName("Tee");
+		d1.setSpecies("Chihuahua");
 			
 		System.out.println(d1);
 		System.out.println(d2);
