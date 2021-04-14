@@ -7,14 +7,14 @@
 public class Employee {
 	private String name;
 	private int empID;
-	private double Salary;
+	private double salary;
 	private String role;
 	private static int EmployeeCount;
 	
 	public Employee(String name,  double salary, String role) {
 		this.name = name;
 		this.empID = ++EmployeeCount;
-		Salary = salary;
+		salary = salary;
 		this.role = role;
 	}
 
@@ -35,11 +35,11 @@ public class Employee {
 	}
 
 	public double getSalary() {
-		return Salary;
+		return salary;
 	}
 
 	public void setSalary(double salary) {
-		Salary = salary;
+		this.salary = salary;
 	}
 
 	public String getRole() {
@@ -69,7 +69,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", empID=" + empID + ", Salary=" + Salary + ", role=" + role + "]";
+		return "Employee [name=" + name + ", empID=" + empID + ", Salary=" + salary + ", role=" + role + "]";
 	}
 	
 }
